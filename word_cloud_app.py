@@ -230,7 +230,7 @@ def extract_text(file):
 def filter_stop_words(text, additional_stopwords=None):
     stop_words = set(STOPWORDS)
     if additional_stopwords:
-        stop_words.update(additional_stopwords)
+        stop_words.update([w.lower() for w in additional_stopwords])
     filtered_text = " ".join([word for word in text.split() if word.lower() not in stop_words])
     return filtered_text
 
