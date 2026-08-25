@@ -82,7 +82,6 @@ label, p, .stMarkdown {
 
 /* Hide Streamlit Chrome header/footer */
 #MainMenu {visibility: hidden;}
-header {visibility: hidden;}
 footer {visibility: hidden;}
 
 /* Inputs / Dropdowns */
